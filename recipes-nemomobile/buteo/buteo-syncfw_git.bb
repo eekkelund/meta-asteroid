@@ -11,6 +11,8 @@ PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
 inherit qmake5 gsettings
 
+PARALLEL_MAKE = ""
+
 EXTRA_QMAKEVARS_PRE += "CONFIG+=usb-moded DEFINES+=USE_KEEPALIVE"
 
 do_configure_prepend() {

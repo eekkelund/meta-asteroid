@@ -10,5 +10,8 @@ PV = "+git${SRCPV}"
 S = "${WORKDIR}/git/lib"
 B = "${S}"
 
+PARALLEL_MAKE = ""
+
 DEPENDS += "qtbase"
 inherit qmake5
+
